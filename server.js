@@ -4,7 +4,8 @@
  * Deploy to Render.com (free tier)
  */
 
-import { WebSocketServer } from 'ws';
+import pkg from 'ws';
+const { WebSocketServer } = pkg;
 import { setupWSConnection } from 'y-websocket/bin/utils';
 
 const PORT = process.env.PORT || 1234;
